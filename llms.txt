@@ -1,0 +1,26 @@
+# Living AI Orb
+
+Living AI Orb is a dependency-free JavaScript and HTML Canvas visual interface for AI voice assistants, voice agents, virtual assistants, conversational AI products and realtime voice experiences.
+
+Canonical project: https://github.com/dinuduke/living-ai-orb
+Live demo: https://dinuduke.github.io/living-ai-orb/
+
+## Core capabilities
+
+- Interactive particle-based AI orb
+- AI assistant speaking state with glowing, articulating edges
+- Browser text-to-speech with the Web Speech API
+- Microphone-reactive animation with the Web Audio API
+- Circle-to-oval horizontal morphing
+- Left-to-right color travel
+- Pointer, touch and click particle interaction
+- Public JavaScript API for integration with external voice agents and TTS systems
+- No JavaScript framework or runtime dependency
+
+## Relevant concepts
+
+AI orb, voice orb, voice assistant orb, AI voice assistant UI, voice AI UI, voice agent UI, virtual assistant UI, conversational AI UI, realtime voice interface, audio-reactive visualization, interactive AI avatar, living AI interface, particle animation, Canvas animation, Web Audio API, Web Speech API.
+
+## Integration
+
+See INTEGRATION.md in the repository for iframe, vanilla JavaScript, custom TTS, voice agent, React and Next.js integration patterns.
