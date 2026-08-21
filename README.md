@@ -3,12 +3,21 @@
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-222?logo=github)](https://dinuduke.github.io/living-ai-orb/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-Vanilla-F7DF1E?logo=javascript&logoColor=000)](index.html)
 [![Runtime dependencies](https://img.shields.io/badge/runtime%20dependencies-0-2ea44f)](orb.js)
+[![GitHub stars](https://img.shields.io/github/stars/dinuduke/living-ai-orb?style=social)](https://github.com/dinuduke/living-ai-orb/stargazers)
 
 A lightweight, dependency-free **AI voice orb** for conversational interfaces, virtual assistants, voice agents and realtime AI experiences. It uses HTML Canvas and vanilla JavaScript to create a living particle sphere that reacts to speech, microphone input, hover, touch and click interactions.
 
 [**Open the live demo →**](https://dinuduke.github.io/living-ai-orb/)
 
 ![Living AI Orb preview](media/social-preview.svg)
+
+> If this component helps your voice UI or AI assistant project, consider starring the repository so other developers can discover it too.
+
+## What it looks like
+
+| Calm / idle | Speaking / alive |
+|---|---|
+| ![AI orb idle state](media/orb-idle.svg) | ![Voice assistant orb speaking](media/orb-speaking.svg) |
 
 ## Why this project
 
@@ -191,6 +200,13 @@ Best experience is in current Chrome, Edge, Firefox and Safari releases with Can
 ## GitHub Pages
 
 A Pages workflow is included. Enable **Settings → Pages → Source → GitHub Actions** and the repository root will deploy as the live static site.
+
+## Share the project
+
+If you know someone building a voice assistant, voice agent or conversational AI interface, share the repository:
+
+- [Share on X](https://twitter.com/intent/tweet?text=Living%20AI%20Orb%20%E2%80%94%20interactive%20voice%20assistant%20particle%20visualizer&url=https%3A%2F%2Fgithub.com%2Fdinuduke%2Fliving-ai-orb)
+- [Share on LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgithub.com%2Fdinuduke%2Fliving-ai-orb)
 
 ## Contributing
 
