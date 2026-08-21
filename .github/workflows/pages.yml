@@ -1,4 +1,5 @@
-name: Deploy static site to GitHub Pages
+# Official GitHub Pages workflow for a dependency-free static site
+name: Deploy static content to Pages
 
 on:
   push:
@@ -23,12 +24,15 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Configure Pages
+
+      - name: Setup Pages
         uses: actions/configure-pages@v5
-      - name: Upload site
+
+      - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: "."
+          path: '.'
+
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
