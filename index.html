@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Living AI Orb — Interactive Voice Assistant Particle Visualizer</title>
+  <meta name="description" content="Interactive AI voice orb and virtual assistant visualizer built with vanilla JavaScript, Canvas, Web Speech API and Web Audio API. Voice-reactive motion, living edge glow, hover interaction and fluid circle-to-oval morphing.">
+  <meta name="keywords" content="AI orb, voice orb, voice assistant orb, AI voice assistant UI, virtual assistant UI, voice agent UI, conversational AI UI, audio reactive orb, particle orb, AI animation, realtime voice UI, Web Speech API, Web Audio API, JavaScript canvas animation">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#050505">
+  <link rel="canonical" href="https://dinuduke.github.io/living-ai-orb/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Living AI Orb">
+  <meta property="og:title" content="Living AI Orb — Interactive Voice Assistant Particle Visualizer">
+  <meta property="og:description" content="A responsive, audio-reactive particle orb for AI assistants, voice agents and conversational interfaces.">
+  <meta property="og:url" content="https://dinuduke.github.io/living-ai-orb/">
+  <meta property="og:image" content="https://dinuduke.github.io/living-ai-orb/media/social-preview.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Living AI Orb — Voice Assistant Visualizer">
+  <meta name="twitter:description" content="Interactive particle orb for voice AI and virtual assistant interfaces.">
+  <meta name="twitter:image" content="https://dinuduke.github.io/living-ai-orb/media/social-preview.svg">
+  <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Living AI Orb","applicationCategory":"DeveloperApplication","operatingSystem":"Web","url":"https://dinuduke.github.io/living-ai-orb/","description":"Interactive AI voice orb and virtual assistant particle visualizer with speech-reactive glow, microphone input, hover interaction, fluid shape morphing and left-to-right color travel.","keywords":"AI orb, voice orb, voice assistant, voice AI, voice agent, virtual assistant, conversational AI, Web Audio API, Web Speech API, JavaScript Canvas, particle animation","isAccessibleForFree":true}</script>
+</head>
+<body>
+  <h1 class="sr-only">Living AI Orb — Interactive Voice Assistant Particle Visualizer</h1>
+  <main class="app">
+    <section class="stage" aria-label="Interactive AI voice orb">
+      <canvas id="orb"></canvas>
+      <div class="status" id="status" aria-live="polite">idle</div>
+    </section>
+    <section class="controls" aria-label="Orb controls">
+      <label class="sr-only" for="text">Text for the assistant to speak</label>
+      <textarea id="text">Hello. I am your AI assistant. Ask me anything. I can speak, pulse, deform, and change colour while I talk.</textarea>
+      <div class="row">
+        <button class="primary" id="speak" type="button">Speak</button>
+        <button id="stop" type="button">Stop</button>
+        <button id="mic" type="button">Mic reactive</button>
+        <button id="shift" type="button">Soft shift</button>
+      </div>
+      <p class="hint">Hover, touch or click the orb. While the assistant speaks, its perimeter ripples and glows more strongly, then settles back into a calm idle state.</p>
+    </section>
+  </main>
+  <script src="orb.js"></script>
+</body>
+</html>
