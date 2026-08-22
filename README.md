@@ -15,9 +15,8 @@ A lightweight, dependency-free **AI voice orb** for conversational interfaces, v
 
 ## What it looks like
 
-| Calm / idle | Speaking / alive |
 
-![Living AI Orb preview](media/ORB-WORKING-1.gif)
+![Living AI Orb preview](media/ORB-WORKING.gif)
 
 ## Why this project
 
