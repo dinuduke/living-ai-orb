@@ -1,10 +1,233 @@
-/* Wide, device-agnostic hero/terminal sizing overrides for GitHub Pages.
-   Uses more of the available viewport on large displays while preserving
-   safe stacking and contained sizing on laptops, tablets and phones. */
+/* Wide, device-agnostic sizing + readability overrides for GitHub Pages.
+   Keeps the layout full-screen on large displays while raising tiny UI text
+   to readable sizes across navigation, terminal, cards, code, FAQ and footer. */
 
-/* Let the page use the screen instead of appearing as a narrow centered island. */
+/* ---------- Global readability ---------- */
+body {
+  font-size: 16px !important;
+  line-height: 1.55 !important;
+}
+
 .shell {
   width: min(1680px, calc(100vw - clamp(24px, 4vw, 72px))) !important;
+}
+
+.topbar {
+  min-height: 74px !important;
+}
+
+.brand {
+  font-size: 16px !important;
+  line-height: 1.2 !important;
+}
+
+.topbar nav {
+  gap: clamp(16px, 2vw, 28px) !important;
+}
+
+.topbar nav a {
+  font-size: 13px !important;
+  line-height: 1.25 !important;
+  letter-spacing: .08em !important;
+}
+
+.menu {
+  min-height: 40px !important;
+  padding: 9px 12px !important;
+  font-size: 12px !important;
+  letter-spacing: .08em !important;
+}
+
+.btn {
+  min-height: 46px !important;
+  font-size: 13px !important;
+  line-height: 1.2 !important;
+}
+
+.eyebrow,
+.kicker {
+  font-size: 12px !important;
+  line-height: 1.5 !important;
+  letter-spacing: .16em !important;
+}
+
+.lede {
+  font-size: clamp(17px, 1.15vw, 19px) !important;
+  line-height: 1.7 !important;
+  color: rgba(224,224,224,.76) !important;
+}
+
+.badges {
+  font-size: 10.5px !important;
+  line-height: 1.45 !important;
+  color: rgba(224,224,224,.58) !important;
+  gap: 16px 20px !important;
+}
+
+/* ---------- Terminal readability ---------- */
+.ttitle {
+  font-size: 13px !important;
+  line-height: 1.25 !important;
+}
+
+.online {
+  font-size: 10px !important;
+  line-height: 1.25 !important;
+  color: rgba(224,224,224,.55) !important;
+}
+
+.telemetry {
+  font-size: 10.5px !important;
+  line-height: 1.45 !important;
+  color: rgba(224,224,224,.64) !important;
+}
+
+.status {
+  font-size: 10.5px !important;
+  line-height: 1.3 !important;
+}
+
+.controls label {
+  font-size: 11px !important;
+  line-height: 1.4 !important;
+}
+
+.controls textarea {
+  min-height: 72px !important;
+  font-size: 14.5px !important;
+  line-height: 1.5 !important;
+}
+
+.crow button {
+  min-height: 40px !important;
+  padding: 8px 12px !important;
+  font-size: 10.5px !important;
+  line-height: 1.2 !important;
+}
+
+.hint {
+  font-size: 10.5px !important;
+  line-height: 1.5 !important;
+  color: rgba(224,224,224,.52) !important;
+}
+
+.tstatus {
+  font-size: 9.5px !important;
+  line-height: 1.35 !important;
+  color: rgba(224,224,224,.5) !important;
+}
+
+/* ---------- Section + card readability ---------- */
+.stats span {
+  font-size: 11px !important;
+  line-height: 1.4 !important;
+  color: rgba(224,224,224,.58) !important;
+}
+
+.split p {
+  font-size: clamp(16px, 1.05vw, 18px) !important;
+  line-height: 1.72 !important;
+  color: rgba(224,224,224,.72) !important;
+}
+
+.card h3,
+.state h3,
+.use h3 {
+  line-height: 1.25 !important;
+}
+
+.card p,
+.state p,
+.step p,
+.use p,
+.answer p,
+.cta > p {
+  font-size: 14.5px !important;
+  line-height: 1.68 !important;
+  color: rgba(224,224,224,.68) !important;
+}
+
+.state b {
+  font-size: 11px !important;
+}
+
+.cmd {
+  font-size: 11.5px !important;
+  line-height: 1.45 !important;
+}
+
+.state-note {
+  font-size: 12.5px !important;
+  line-height: 1.55 !important;
+  color: rgba(224,224,224,.62) !important;
+}
+
+.step h3 {
+  font-size: 18px !important;
+  line-height: 1.3 !important;
+}
+
+.node {
+  font-size: 12px !important;
+}
+
+/* ---------- Developer/code readability ---------- */
+.codehead {
+  min-height: 44px !important;
+  font-size: 12px !important;
+  line-height: 1.35 !important;
+}
+
+.codehead button {
+  min-height: 34px !important;
+  padding: 6px 11px !important;
+  font-size: 11px !important;
+}
+
+.tabs button {
+  min-height: 42px !important;
+  padding: 11px 16px !important;
+  font-size: 11px !important;
+  line-height: 1.3 !important;
+}
+
+pre {
+  font-size: 14px !important;
+  line-height: 1.7 !important;
+  tab-size: 2 !important;
+}
+
+.tag {
+  font-size: 10.5px !important;
+  line-height: 1.3 !important;
+}
+
+/* ---------- FAQ + footer readability ---------- */
+.faqbtn {
+  min-height: 58px !important;
+  font-size: 15px !important;
+  line-height: 1.35 !important;
+}
+
+.faqbtn b {
+  font-size: 24px !important;
+  line-height: 1 !important;
+}
+
+.footer {
+  font-size: 13px !important;
+}
+
+.footer nav a {
+  font-size: 12px !important;
+  line-height: 1.4 !important;
+}
+
+.footer p,
+.footstat {
+  font-size: 11.5px !important;
+  line-height: 1.55 !important;
+  color: rgba(224,224,224,.58) !important;
 }
 
 /* Large desktop / ultrawide */
@@ -51,24 +274,20 @@
   }
 
   .hero .tbar {
-    min-height: 42px !important;
-    padding: 7px 12px !important;
+    min-height: 46px !important;
+    padding: 8px 13px !important;
   }
 
   .hero .tstage {
-    padding: 4px 11px 2px !important;
+    padding: 5px 12px 3px !important;
   }
 
   .hero .controls {
-    padding: 10px 11px 11px !important;
-  }
-
-  .hero .controls textarea {
-    min-height: 58px !important;
+    padding: 12px 13px 13px !important;
   }
 
   .hero .tstatus {
-    padding: 6px 10px !important;
+    padding: 7px 11px !important;
   }
 }
 
@@ -121,24 +340,40 @@
   }
 
   .hero .tbar {
-    min-height: 42px !important;
-    padding: 7px 12px !important;
+    min-height: 45px !important;
+    padding: 8px 12px !important;
   }
 
   .hero .tstage {
-    padding: 4px 11px 2px !important;
+    padding: 5px 11px 3px !important;
   }
 
   .hero .controls {
-    padding: 10px 11px 11px !important;
-  }
-
-  .hero .controls textarea {
-    min-height: 58px !important;
+    padding: 11px 12px 12px !important;
   }
 
   .hero .tstatus {
-    padding: 6px 10px !important;
+    padding: 7px 10px !important;
+  }
+}
+
+/* Mid-size desktop/laptop nav: retain readability without crowding. */
+@media (min-width: 821px) and (max-width: 1100px) {
+  .topbar {
+    gap: 16px !important;
+  }
+
+  .topbar nav {
+    gap: 14px !important;
+  }
+
+  .topbar nav a {
+    font-size: 12px !important;
+  }
+
+  .topbar > .btn {
+    padding-inline: 14px !important;
+    font-size: 11.5px !important;
   }
 }
 
@@ -189,6 +424,29 @@
     width: calc(100vw - 24px) !important;
   }
 
+  .topbar {
+    min-height: 70px !important;
+  }
+
+  .topbar nav {
+    top: 70px !important;
+    gap: 2px !important;
+    padding: 10px 14px 14px !important;
+  }
+
+  .topbar nav.open a {
+    min-height: 44px !important;
+    display: flex !important;
+    align-items: center !important;
+    padding: 10px 8px !important;
+    font-size: 14px !important;
+    border-bottom: 1px solid rgba(0,255,255,.08) !important;
+  }
+
+  .menu {
+    font-size: 12.5px !important;
+  }
+
   .hero {
     padding: 46px 0 44px !important;
     gap: 34px !important;
@@ -207,12 +465,30 @@
   .hero .stage {
     width: min(76vw, 500px) !important;
   }
+
+  .cards,
+  .usegrid,
+  .states {
+    gap: 18px !important;
+  }
+
+  .section {
+    padding: 82px 0 !important;
+  }
 }
 
 /* Phones */
 @media (max-width: 560px) {
   .shell {
     width: calc(100vw - 16px) !important;
+  }
+
+  body {
+    font-size: 15.5px !important;
+  }
+
+  .brand {
+    font-size: 14px !important;
   }
 
   .hero {
@@ -223,6 +499,15 @@
   .hero h1 {
     font-size: clamp(38px, 12vw, 56px) !important;
     line-height: .98 !important;
+  }
+
+  .lede {
+    font-size: 16.5px !important;
+  }
+
+  .eyebrow,
+  .kicker {
+    font-size: 11.5px !important;
   }
 
   .hero .terminal {
@@ -237,6 +522,87 @@
 
   .hero .orb-zone {
     margin: -20px 0 -24px !important;
+  }
+
+  .ttitle {
+    font-size: 11.5px !important;
+  }
+
+  .online {
+    font-size: 9.5px !important;
+  }
+
+  .telemetry {
+    font-size: 10px !important;
+  }
+
+  .controls textarea {
+    min-height: 78px !important;
+    font-size: 14px !important;
+  }
+
+  .crow button {
+    min-height: 42px !important;
+    font-size: 10.5px !important;
+  }
+
+  .hint {
+    font-size: 10px !important;
+  }
+
+  .tstatus {
+    font-size: 9px !important;
+  }
+
+  .badges,
+  .stats span {
+    font-size: 10px !important;
+  }
+
+  .split p,
+  .card p,
+  .state p,
+  .step p,
+  .use p,
+  .answer p,
+  .cta > p {
+    font-size: 14px !important;
+  }
+
+  .codehead {
+    font-size: 11px !important;
+  }
+
+  .tabs {
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+
+  .tabs button {
+    flex: 0 0 auto !important;
+    min-height: 42px !important;
+    font-size: 10.5px !important;
+  }
+
+  pre {
+    font-size: 12.5px !important;
+    line-height: 1.65 !important;
+    padding: 16px !important;
+  }
+
+  .faqbtn {
+    min-height: 60px !important;
+    padding-block: 12px !important;
+    font-size: 14px !important;
+  }
+
+  .footer nav a {
+    font-size: 11.5px !important;
+  }
+
+  .footstat,
+  .footer p {
+    font-size: 11px !important;
   }
 }
 
@@ -255,8 +621,12 @@
   }
 
   .hero .tbar {
-    gap: 7px !important;
-    padding-inline: 8px !important;
+    gap: 6px !important;
+    padding-inline: 7px !important;
+  }
+
+  .online {
+    display: none !important;
   }
 
   .hero .crow {
@@ -267,6 +637,15 @@
   .hero .crow button {
     min-width: 0 !important;
     padding-inline: 6px !important;
-    font-size: 9px !important;
+    font-size: 10px !important;
+  }
+
+  .tabs button {
+    font-size: 10px !important;
+    padding-inline: 12px !important;
+  }
+
+  pre {
+    font-size: 12px !important;
   }
 }
