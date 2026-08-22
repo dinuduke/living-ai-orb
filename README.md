@@ -9,19 +9,21 @@ A lightweight, dependency-free **AI voice orb** for conversational interfaces, v
 
 [**Open the live demo →**](https://dinuduke.github.io/living-ai-orb/)
 
-![Living AI Orb preview](media/social-preview.svg)
+![Living AI Orb preview](media/ORB-MAIN.png)
 
 > If this component helps your voice UI or AI assistant project, consider starring the repository so other developers can discover it too.
 
 ## What it looks like
 
 | Calm / idle | Speaking / alive |
-|---|---|
-| ![AI orb idle state](media/orb-idle.svg) | ![Voice assistant orb speaking](media/orb-speaking.svg) |
+
+![Living AI Orb preview](media/ORB-WORKING.mov)
 
 ## Why this project
 
 Modern voice AI products need more than a microphone icon. A visual assistant should communicate state and presence: calm while idle, responsive while listening, expressive while speaking, and tactile when the user interacts with it.
+
+![Living AI Orb preview](media/ORB-DES.png)
 
 Living AI Orb is designed as a reusable front-end building block for:
 
