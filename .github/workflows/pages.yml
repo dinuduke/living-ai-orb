@@ -33,7 +33,7 @@ jobs:
           from pathlib import Path
           page = Path('_site/index.html')
           html = page.read_text(encoding='utf-8')
-          link = '<link rel="stylesheet" href="responsive-fix.css?v=20260822-wide">'
+          link = '<link rel="stylesheet" href="responsive-fix.css?v=20260822-readable">'
           if 'responsive-fix.css' not in html:
               html = html.replace('</head>', f'{link}\n</head>', 1)
           else:
